@@ -1,7 +1,7 @@
 package com.example.busspass.controller;
 
 import java.util.List;
-
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -25,7 +25,7 @@ public class PassApplicationcontroller {
     }
 
     @PostMapping                       //submiting the appilication
-    public PassApplication submitApplication(@RequestBody PassApplication application) {
+    public PassApplication submitApplication(@Valid @RequestBody PassApplication application) {
         return passApplicationService.submitApplication(application);
     }
 
@@ -52,6 +52,13 @@ public class PassApplicationcontroller {
     public List<PassApplication> getApplicationsExpiringInNext30Days() {
         return passApplicationService.getApplicationsExpiringInNext30Days();
     }
+
+    @GetMapping("/status/{status}")
+public List<PassApplication> getApplicationsByStatus(
+        @PathVariable ApplicationStatus status) {
+
+    return passApplicationService.getApplicationsByStatus(status);
+}
 
     public static class StatusRequest {
         public ApplicationStatus status;

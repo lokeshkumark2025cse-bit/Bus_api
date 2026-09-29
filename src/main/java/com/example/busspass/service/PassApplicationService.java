@@ -12,4 +12,5 @@ public interface PassApplicationService {
     List<PassApplication> getApplicationsByStudent(Long studentId);
     PassApplication updateApplicationStatus(Long id, ApplicationStatus status, String remark);
     List<PassApplication> getApplicationsExpiringInNext30Days();
+    List<PassApplication> getApplicationsByStatus(ApplicationStatus status);
 }

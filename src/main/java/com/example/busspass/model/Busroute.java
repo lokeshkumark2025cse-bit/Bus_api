@@ -14,6 +14,10 @@ public class Busroute {
     private String source;
     private String destination;
 
+    public Busroute() {
+     }
+
+
     public Busroute(Long routeId, Long routename, String source, String destination) {
         this.routeId = routeId;
         this.routename = routename;

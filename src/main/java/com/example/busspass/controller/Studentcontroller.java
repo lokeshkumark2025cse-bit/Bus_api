@@ -11,22 +11,22 @@ import com.example.busspass.model.Student;
 import com.example.busspass.service.StudentService;
 
 @RestController
-@RequestMapping("/students")
+@RequestMapping("/api/students")
 public class Studentcontroller {
 
-    private StudentService studentService;
+    private final StudentService studentService;
 
     public Studentcontroller(StudentService studentService) {
         this.studentService = studentService;
     }
 
-    @PostMapping
+    @PostMapping("/register")
     public Student saveStudent(@RequestBody Student student) {
         return studentService.saveStudent(student);
     }
 
     @GetMapping("/{stdid}")
-    public Student getStudentById(@PathVariable Long id) {
-        return studentService.getStudentbyId(id);
+    public Student getStudentById(@PathVariable Long stdid) {
+        return studentService.getStudentbyId(stdid);
     }
 }

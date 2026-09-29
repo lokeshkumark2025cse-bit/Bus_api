@@ -7,6 +7,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 
 @Entity 
@@ -14,13 +16,18 @@ public class PassApplication {
     @Id 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long applicationid;
-  
+
+    @NotNull 
      @ManyToOne          //from class side we need to see-many application belong to one student
     private Student student;
+    @NotNull 
     @ManyToOne                 //many application have one bus route
     private Busroute busRoute;
+    @NotBlank 
      private String boardingPoint;
+     @NotBlank 
     private String photoReference;
+    @NotNull 
     private LocalDate applicationDate;
     private ApplicationStatus status;
     private String remark;
@@ -28,6 +35,11 @@ public class PassApplication {
     private LocalDate validFrom;
     private LocalDate validUntil;
 
+
+    public PassApplication()
+    {
+
+    }
 
     public PassApplication(Student student, Busroute busRoute,
                            String boardingPoint, String photoReference,

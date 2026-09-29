@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Bus Pass | Application Status</title>
+
+    <link rel="stylesheet" href="status.css">
+
+</head>
+
+<body>
+
+    <div class="status-page">
+
+        <header class="topbar">
+
+            <div class="brand">
+
+                <div class="logo">
+                    SB
+                </div>
+
+                <div>
+                    <h1>Student Bus Pass</h1>
+                    <span>Application Status</span>
+                </div>
+
+            </div>
+
+            <button
+                type="button"
+                id="backBtn"
+                class="back-btn">
+                Back to Dashboard
+            </button>
+
+        </header>
+
+
+        <main class="main-content">
+
+
+            <!-- PAGE HEADING -->
+
+            <section class="page-heading">
+
+                <p class="heading-label">
+                    Student Services
+                </p>
+
+                <h2>
+                    Application Status
+                </h2>
+
+                <p>
+                    View the current status and details of your
+                    bus pass application.
+                </p>
+
+            </section>
+
+
+            <!-- STATUS SUMMARY -->
+
+            <section class="status-summary">
+
+                <div>
+
+                    <span class="summary-label">
+                        Current Status
+                    </span>
+
+                    <h3 id="applicationStatus">
+                        Pending
+                    </h3>
+
+                    <p id="statusDescription">
+                        Your application is waiting for admin review.
+                    </p>
+
+                </div>
+
+                <span
+                    id="statusBadge"
+                    class="status-badge pending">
+                    Pending
+                </span>
+
+            </section>
+
+
+            <!-- APPLICATION DETAILS -->
+
+            <section class="details-section">
+
+                <div class="section-title">
+
+                    <h3>
+                        Application Details
+                    </h3>
+
+                    <p>
+                        Information submitted with your bus pass application.
+                    </p>
+
+                </div>
+
+
+                <div class="details-grid">
+
+
+                    <div class="detail-item">
+
+                        <span class="detail-label">
+                            Application Number
+                        </span>
+
+                        <strong id="applicationNumber">
+                            BP20260001
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <span class="detail-label">
+                            Submitted Date
+                        </span>
+
+                        <strong id="submittedDate">
+                            29 September 2026
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <span class="detail-label">
+                            Student Name
+                        </span>
+
+                        <strong id="studentName">
+                            Student Name
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <span class="detail-label">
+                            Student ID
+                        </span>
+
+                        <strong id="studentId">
+                            STU1001
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <span class="detail-label">
+                            College
+                        </span>
+
+                        <strong id="college">
+                            College Name
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <span class="detail-label">
+                            Department
+                        </span>
+
+                        <strong id="department">
+                            Computer Science
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- TRAVEL DETAILS -->
+
+            <section class="details-section">
+
+                <div class="section-title">
+
+                    <h3>
+                        Travel Details
+                    </h3>
+
+                    <p>
+                        Route information provided in the application.
+                    </p>
+
+                </div>
+
+
+                <div class="route-box">
+
+                    <div class="route-point">
+
+                        <span class="route-label">
+                            Boarding Point
+                        </span>
+
+                        <strong id="boardingPoint">
+                            Bus Stand
+                        </strong>
+
+                    </div>
+
+
+                    <div class="route-arrow">
+                        →
+                    </div>
+
+
+                    <div class="route-point">
+
+                        <span class="route-label">
+                            Destination
+                        </span>
+
+                        <strong id="destination">
+                            College
+                        </strong>
+
+                    </div>
+
+
+                    <div class="route-info">
+
+                        <span>
+                            Route
+                        </span>
+
+                        <strong id="route">
+                            Route 1
+                        </strong>
+
+                    </div>
+
+
+                    <div class="route-info">
+
+                        <span>
+                            Pass Type
+                        </span>
+
+                        <strong id="passType">
+                            Semester
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- REJECTION INFORMATION -->
+
+            <section
+                id="rejectionSection"
+                class="rejection-section hidden">
+
+                <h3>
+                    Rejection Reason
+                </h3>
+
+                <p id="rejectionReason">
+                    Your application has been rejected.
+                </p>
+
+            </section>
+
+
+            <!-- PASS BUTTON -->
+
+            <section
+                id="passSection"
+                class="pass-section hidden">
+
+                <div>
+
+                    <h3>
+                        Your Bus Pass is Ready
+                    </h3>
+
+                    <p>
+                        Your application has been approved.
+                        You can view your active bus pass.
+                    </p>
+
+                </div>
+
+                <button
+                    type="button"
+                    id="viewPassBtn">
+                    View Bus Pass
+                </button>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+    <script src="status.js"></script>
+
+</body>
+
+</html>

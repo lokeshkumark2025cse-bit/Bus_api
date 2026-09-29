@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Bus Pass | Admin Dashboard</title>
+
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <header class="topbar">
+
+            <div class="brand">
+
+                <div class="logo">
+                    SB
+                </div>
+
+                <div>
+                    <h1>Student Bus Pass</h1>
+                    <span>Admin Portal</span>
+                </div>
+
+            </div>
+
+            <button id="logoutBtn" class="logout-btn">
+                Logout
+            </button>
+
+        </header>
+
+
+        <main class="main-content">
+
+            <section class="welcome-section">
+
+                <p class="welcome-label">
+                    Administration
+                </p>
+
+                <h2>
+                    Admin Dashboard
+                </h2>
+
+                <p>
+                    Manage student bus pass applications,
+                    approvals and active passes.
+                </p>
+
+            </section>
+
+
+            <!-- SUMMARY -->
+
+            <section class="summary-cards">
+
+                <div class="summary-card">
+
+                    <span class="summary-label">
+                        Total Applications
+                    </span>
+
+                    <strong>
+                        24
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <span class="summary-label">
+                        Pending Applications
+                    </span>
+
+                    <strong>
+                        8
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <span class="summary-label">
+                        Approved
+                    </span>
+
+                    <strong>
+                        12
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <span class="summary-label">
+                        Active Passes
+                    </span>
+
+                    <strong>
+                        10
+                    </strong>
+
+                </div>
+
+            </section>
+
+
+            <!-- ADMIN ACTIONS -->
+
+            <section class="actions-section">
+
+                <div class="section-heading">
+
+                    <h2>
+                        Application Management
+                    </h2>
+
+                    <p>
+                        Review and manage student bus pass applications.
+                    </p>
+
+                </div>
+
+
+                <div class="action-grid">
+
+                    <div class="action-card">
+
+                        <div class="action-icon">
+                            AP
+                        </div>
+
+                        <h3>
+                            All Applications
+                        </h3>
+
+                        <p>
+                            View all submitted bus pass applications.
+                        </p>
+
+                        <button
+                            class="action-btn"
+                            id="allApplicationsBtn">
+                            View Applications
+                        </button>
+
+                    </div>
+
+
+                    <div class="action-card">
+
+                        <div class="action-icon">
+                            PN
+                        </div>
+
+                        <h3>
+                            Pending Applications
+                        </h3>
+
+                        <p>
+                            Review applications waiting for approval.
+                        </p>
+
+                        <button
+                            class="action-btn"
+                            id="pendingBtn">
+                            Review Pending
+                        </button>
+
+                    </div>
+
+
+                    <div class="action-card">
+
+                        <div class="action-icon">
+                            AP
+                        </div>
+
+                        <h3>
+                            Approved Applications
+                        </h3>
+
+                        <p>
+                            View applications that have been approved.
+                        </p>
+
+                        <button
+                            class="action-btn secondary"
+                            id="approvedBtn">
+                            View Approved
+                        </button>
+
+                    </div>
+
+
+                    <div class="action-card">
+
+                        <div class="action-icon">
+                            PS
+                        </div>
+
+                        <h3>
+                            Active Bus Passes
+                        </h3>
+
+                        <p>
+                            View currently active student bus passes.
+                        </p>
+
+                        <button
+                            class="action-btn secondary"
+                            id="passesBtn">
+                            View Passes
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- RECENT APPLICATIONS -->
+
+            <section class="recent-section">
+
+                <div class="section-heading">
+
+                    <h2>
+                        Recent Applications
+                    </h2>
+
+                    <p>
+                        Latest bus pass applications submitted by students.
+                    </p>
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>Application No.</th>
+                                <th>Student</th>
+                                <th>College</th>
+                                <th>Route</th>
+                                <th>Status</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    BP20260001
+                                </td>
+
+                                <td>
+                                    Student Name
+                                </td>
+
+                                <td>
+                                    College Name
+                                </td>
+
+                                <td>
+                                    Route 1
+                                </td>
+
+                                <td>
+                                    <span class="status pending">
+                                        Pending
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    BP20260002
+                                </td>
+
+                                <td>
+                                    Student Two
+                                </td>
+
+                                <td>
+                                    College Name
+                                </td>
+
+                                <td>
+                                    Route 2
+                                </td>
+
+                                <td>
+                                    <span class="status approved">
+                                        Approved
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    BP20260003
+                                </td>
+
+                                <td>
+                                    Student Three
+                                </td>
+
+                                <td>
+                                    College Name
+                                </td>
+
+                                <td>
+                                    Route 3
+                                </td>
+
+                                <td>
+                                    <span class="status rejected">
+                                        Rejected
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="admin.js"></script>
+
+</body>
+
+</html>

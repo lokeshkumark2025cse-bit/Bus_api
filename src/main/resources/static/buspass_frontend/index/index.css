@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+}
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.login-container {
+    width: 900px;
+    min-height: 540px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.brand-section {
+    background: #155eef;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+}
+
+.logo {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: #155eef;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.brand-section h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.brand-section p {
+    max-width: 320px;
+    line-height: 1.7;
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+.login-section {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-section h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.login-subtitle {
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #155eef;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #155eef;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #104dcc;
+}
+
+#loginMessage {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.register-text {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.register-text a {
+    color: #155eef;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 750px) {
+
+    .login-page {
+        padding: 20px;
+    }
+
+    .login-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .brand-section {
+        padding: 40px;
+    }
+
+    .login-section {
+        padding: 40px;
+    }
+}

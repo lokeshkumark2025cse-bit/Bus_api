@@ -26,7 +26,7 @@ public class Busroutecontroller {
     }
 
     @GetMapping("/{routeid}")
-    public Busroute getBusRouteById(@PathVariable Long id) {
-        return busRouteService.getBusroutebyId(id);
+    public Busroute getBusRouteById(@PathVariable Long routeid) {
+        return busRouteService.getBusroutebyId(routeid);
     }
 }

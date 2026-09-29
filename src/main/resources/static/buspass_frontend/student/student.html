@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Bus Pass | Dashboard</title>
+
+    <link rel="stylesheet" href="student.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <header class="topbar">
+
+            <div class="brand">
+
+                <div class="logo">
+                    SB
+                </div>
+
+                <div>
+                    <h1>Student Bus Pass</h1>
+                    <span>Student Portal</span>
+                </div>
+
+            </div>
+
+            <button id="logoutBtn" class="logout-btn">
+                Logout
+            </button>
+
+        </header>
+
+
+        <main class="main-content">
+
+            <section class="welcome-section">
+
+                <p class="welcome-label">
+                    Welcome, Student
+                </p>
+
+                <h2>
+                    Student Dashboard
+                </h2>
+
+                <p>
+                    Apply for a bus pass, track your application
+                    and manage your bus pass information.
+                </p>
+
+            </section>
+
+
+            <section class="dashboard-cards">
+
+                <div class="dashboard-card">
+
+                    <div class="card-icon">
+                        AP
+                    </div>
+
+                    <h3>
+                        Apply for Bus Pass
+                    </h3>
+
+                    <p>
+                        Submit a new application for your
+                        student bus pass.
+                    </p>
+
+                    <button
+                        class="card-btn"
+                        id="applyBtn">
+                        Apply Now
+                    </button>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <div class="card-icon">
+                        ST
+                    </div>
+
+                    <h3>
+                        Application Status
+                    </h3>
+
+                    <p>
+                        Check whether your bus pass application
+                        is pending, approved or rejected.
+                    </p>
+
+                    <button
+                        class="card-btn secondary"
+                        id="statusBtn">
+                        View Status
+                    </button>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <div class="card-icon">
+                        PS
+                    </div>
+
+                    <h3>
+                        My Bus Pass
+                    </h3>
+
+                    <p>
+                        View your active bus pass details
+                        after approval.
+                    </p>
+
+                    <button
+                        class="card-btn secondary"
+                        id="passBtn">
+                        View Pass
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <section class="information-section">
+
+                <div class="section-heading">
+
+                    <h2>
+                        Current Application
+                    </h2>
+
+                    <p>
+                        Your latest bus pass application information.
+                    </p>
+
+                </div>
+
+
+                <div class="status-box">
+
+                    <div>
+
+                        <span class="status-label">
+                            Application Status
+                        </span>
+
+                        <h3 id="applicationStatus">
+                            No Application Submitted
+                        </h3>
+
+                    </div>
+
+                    <span
+                        id="statusBadge"
+                        class="status-badge">
+                        Not Applied
+                    </span>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="student.js"></script>
+
+</body>
+</html>

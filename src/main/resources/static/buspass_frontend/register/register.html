@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Bus Pass | Register</title>
+
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+
+    <main class="register-page">
+
+        <section class="register-container">
+
+            <div class="brand-section">
+
+                <div class="logo">SB</div>
+
+                <h1>Student Bus Pass</h1>
+
+                <p>
+                    Create your account and apply for
+                    your student bus pass easily.
+                </p>
+
+            </div>
+
+            <div class="register-section">
+
+                <h2>Create Account</h2>
+
+                <p class="register-subtitle">
+                    Register as a student to continue
+                </p>
+
+                <form id="registerForm">
+
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regnumber">Register Number</label>
+                        <input
+                            type="text"
+                            id="regnumber"
+                            placeholder="Enter your register number"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="year">Year</label>
+                        <select id="year" required>
+                            <option value="">Select Year</option>
+                            <option value="1">1st Year</option>
+                            <option value="2">2nd Year</option>
+                            <option value="3">3rd Year</option>
+                            <option value="4">4th Year</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dept">Department</label>
+                        <input
+                            type="text"
+                            id="dept"
+                            placeholder="Enter your department"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter your 10-digit phone number"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Create a password"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm your password"
+                            required
+                        >
+                    </div>
+
+                    <button type="submit">
+                        Register
+                    </button>
+
+                    <p id="registerMessage"></p>
+
+                    <p class="login-text">
+                        Already have an account?
+                        <a href="../index/index.html">
+                            Login
+                        </a>
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="register.js"></script>
+
+</body>
+</html>

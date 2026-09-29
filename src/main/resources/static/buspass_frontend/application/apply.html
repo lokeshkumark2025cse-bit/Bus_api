@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Bus Pass | Apply</title>
+
+    <link rel="stylesheet" href="apply.css">
+</head>
+
+<body>
+
+    <div class="application-page">
+
+        <header class="topbar">
+
+            <div class="brand">
+
+                <div class="logo">
+                    SB
+                </div>
+
+                <div>
+                    <h1>Student Bus Pass</h1>
+                    <span>Bus Pass Application</span>
+                </div>
+
+            </div>
+
+            <button
+                type="button"
+                id="backBtn"
+                class="back-btn">
+                Back to Dashboard
+            </button>
+
+        </header>
+
+
+        <main class="main-content">
+
+            <section class="page-heading">
+
+                <p class="heading-label">
+                    Student Services
+                </p>
+
+                <h2>
+                    Apply for Bus Pass
+                </h2>
+
+                <p>
+                    Enter your details and travel information
+                    to submit your bus pass application.
+                </p>
+
+            </section>
+
+
+            <form id="applicationForm">
+
+
+                <!-- STUDENT DETAILS -->
+
+                <section class="form-section">
+
+                    <div class="section-title">
+
+                        <h3>
+                            Student Details
+                        </h3>
+
+                        <p>
+                            Provide your basic student information.
+                        </p>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="studentName">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="studentName"
+                                placeholder="Enter your full name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="studentId">
+                                Student ID
+                            </label>
+
+                            <input
+                                type="text"
+                                id="studentId"
+                                placeholder="Enter student ID"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Enter your email"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                placeholder="Enter 10-digit phone number"
+                                maxlength="10"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- COLLEGE DETAILS -->
+
+                <section class="form-section">
+
+                    <div class="section-title">
+
+                        <h3>
+                            College Details
+                        </h3>
+
+                        <p>
+                            Provide your college and course information.
+                        </p>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group full-width">
+
+                            <label for="college">
+                                College Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="college"
+                                placeholder="Enter your college name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="department">
+                                Department
+                            </label>
+
+                            <input
+                                type="text"
+                                id="department"
+                                placeholder="Enter your department"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="year">
+                                Year of Study
+                            </label>
+
+                            <select id="year" required>
+
+                                <option value="">
+                                    Select year
+                                </option>
+
+                                <option value="1">
+                                    First Year
+                                </option>
+
+                                <option value="2">
+                                    Second Year
+                                </option>
+
+                                <option value="3">
+                                    Third Year
+                                </option>
+
+                                <option value="4">
+                                    Fourth Year
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ROUTE DETAILS -->
+
+                <section class="form-section">
+
+                    <div class="section-title">
+
+                        <h3>
+                            Travel Details
+                        </h3>
+
+                        <p>
+                            Enter the route for which the bus pass is required.
+                        </p>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="boardingPoint">
+                                Boarding Point
+                            </label>
+
+                            <input
+                                type="text"
+                                id="boardingPoint"
+                                placeholder="Enter boarding point"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="destination">
+                                Destination
+                            </label>
+
+                            <input
+                                type="text"
+                                id="destination"
+                                placeholder="Enter college destination"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="route">
+                                Bus Route
+                            </label>
+
+                            <select id="route" required>
+
+                                <option value="">
+                                    Select bus route
+                                </option>
+
+                                <option value="route1">
+                                    Route 1
+                                </option>
+
+                                <option value="route2">
+                                    Route 2
+                                </option>
+
+                                <option value="route3">
+                                    Route 3
+                                </option>
+
+                                <option value="route4">
+                                    Route 4
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="passType">
+                                Pass Type
+                            </label>
+
+                            <select id="passType" required>
+
+                                <option value="">
+                                    Select pass type
+                                </option>
+
+                                <option value="monthly">
+                                    Monthly
+                                </option>
+
+                                <option value="quarterly">
+                                    Quarterly
+                                </option>
+
+                                <option value="semester">
+                                    Semester
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- APPLICATION SUBMISSION -->
+
+                <section class="form-section">
+
+                    <div class="section-title">
+
+                        <h3>
+                            Submit Application
+                        </h3>
+
+                        <p>
+                            Review your information before submitting.
+                        </p>
+
+                    </div>
+
+
+                    <div class="confirmation">
+
+                        <input
+                            type="checkbox"
+                            id="confirmDetails"
+                            required
+                        >
+
+                        <label for="confirmDetails">
+                            I confirm that the information provided
+                            above is correct.
+                        </label>
+
+                    </div>
+
+
+                    <p id="applicationMessage"></p>
+
+
+                    <button
+                        type="submit"
+                        class="submit-btn">
+                        Submit Application
+                    </button>
+
+                </section>
+
+            </form>
+
+        </main>
+
+    </div>
+
+
+    <script src="apply.js"></script>
+
+</body>
+</html>
